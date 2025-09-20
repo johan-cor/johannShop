@@ -1,0 +1,225 @@
+:root {
+    --navbarColorBg: #E12AFB;
+    --bgCards: #DDD6FF;
+    --textColor: #fff;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* //estilos para el nabvars */
+.navbar {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+
+    background-color: var(--navbarColorBg);
+    color: white;
+}
+
+.navbar *{
+    color: white;
+}
+
+
+/* .navbar a {
+    text-decoration: none;
+    color: white;
+} */
+
+.menu {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.menu li {
+    border-bottom: none;
+    transition: all 1s ease-in;
+}
+
+.menu li:hover {
+    border-bottom: 1px solid black;
+}
+
+
+/* Estilos del componente Iteml list  */
+
+
+.itemList_title{
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.itemListProducts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+
+    padding: 10px;
+}
+
+
+/* Estilos para el componente Item */
+
+.producto {
+    width: 250px;
+    height: auto;
+    background-color: var(--bgCards);
+
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.producto img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.producto_info{
+    padding: 4px;
+}
+
+.ver-mas{
+    font-size: 14px;
+    border: none;
+    background-color: var(--navbarColorBg);
+    color: white;
+    margin-top: 8px;
+    padding: 4px 8px 4px 8px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+
+}
+
+.var-mas_link{
+    color: white;
+}
+
+.ver-mas:hover{
+    font-size: 15px;
+}
+
+
+/* estilos del ItemDetails  */
+
+
+.item_container{
+    width: 100%;
+    padding: 5px;
+}
+
+.item-container_card{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-container_card img{
+    width: 250px;
+}
+
+.item-container_detail{
+
+}
+
+
+/* estilos del itemCount */
+
+.itemcount {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-count_botton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-count_botton button{
+    margin: 4px 0 6px 0;
+    border: none;
+    background-color: var(--navbarColorBg);
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    color: var(--textColor);
+}
+
+.agregar-carrito{
+    max-width: 200px;
+    background-color: var(--navbarColorBg);
+    color: var(--textColor);
+    border: none;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+
+}
+
+
+
+/* estilos para contacto 1 */
+
+.contact_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact-form label{
+    align-self: flex-start;
+}
+
+.contact-form input{
+    width: 250px;
+    padding: 6px 4px 6px 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.form-submit_button{
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    padding-bottom:6px;
+    padding-top: 6px;
+    background-color: var(--navbarColorBg);
+    color: var(--textColor);
+    transition: all 0.2s ease-out;
+}
+
+.form-submit_button:hover{
+    width: 120px;
+    padding-bottom:7px;
+    padding-top: 7px;
+}
